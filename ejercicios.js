@@ -23,5 +23,5 @@ function DiaDeSemana(dia) {
          default:
                 console.log("Error");
     }
-    document.getElementById('resultado').innerHTML;
+    document.getElementById('resultado').innerHTML = 'dia';
 }
