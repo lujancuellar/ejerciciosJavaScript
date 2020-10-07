@@ -1,7 +1,11 @@
 
 function DiaDeSemana(dia) {
+    //creas una variable para guardar el nombre del dia
+    let nombreDelDia = null;
     switch (dia) {
         case "1":
+            //y guardas el valor en cada case (repetilo en los demas"
+            nombreDelDia = "Lunes";
             console.log("Lunes");
             break;
         case "2":
@@ -23,5 +27,11 @@ function DiaDeSemana(dia) {
          default:
                 console.log("Error");
     }
+<<<<<<< HEAD
     document.getElementById('resultado').innerHTML = 'dia';
 }
+=======
+    //asignas el valor de la variable en el innerHMTL
+    document.getElementById('resultado').innerHTML = nombreDelDia;
+}
+>>>>>>> e7def4fd134d942fb50e5fd30a7779770eecbfa6
