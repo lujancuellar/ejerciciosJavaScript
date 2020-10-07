@@ -9,29 +9,30 @@ function DiaDeSemana(dia) {
             console.log("Lunes");
             break;
         case "2":
+            nombreDelDia = "Martes";
             console.log("Martes");
             break;
         case "3":
+            nombreDelDia = "Miercoles";
             console.log("Miercoles");
             break;
         case "4":
+            nombreDelDia = "Jueves";
             console.log("Jueves");
             break;
         case "5":
+            nombreDelDia = "Viernes";
             console.log("Viernes");
             break;
         case "6":
         case "7":
+            nombreDelDia = "Fin de semana";
                 console.log("Fin de semana");
             break;
          default:
+            nombreDelDia = "Error";
                 console.log("Error");
     }
-<<<<<<< HEAD
-    document.getElementById('resultado').innerHTML = 'dia';
-}
-=======
     //asignas el valor de la variable en el innerHMTL
     document.getElementById('resultado').innerHTML = nombreDelDia;
 }
->>>>>>> e7def4fd134d942fb50e5fd30a7779770eecbfa6
