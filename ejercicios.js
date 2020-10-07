@@ -36,3 +36,20 @@ function DiaDeSemana(dia) {
     //asignas el valor de la variable en el innerHMTL
     document.getElementById('resultado').innerHTML = nombreDelDia;
 }
+
+// segundo ejercicio. Pide la edad y si es mayor de 18 puede conducir.
+
+let miEdad = null;
+ function puedoConducir (edad) {
+     if (edad >= 18) {
+         miEdad = "Puedes conducir"
+         console.log("Puedes conducir");
+     } else {
+         miEdad = "No puedes conducir"
+         console.log("No puedes conducir");
+     }
+     document.getElementById('laEdad').innerHTML = miEdad;
+ }
+
+ //tercer ejercicio. Pide la nota y muestra la calificacion
+
