@@ -52,4 +52,42 @@ let miEdad = null;
  }
 
  //tercer ejercicio. Pide la nota y muestra la calificacion
+let laNota = null;
+ function miNota (nota) {
+     switch (nota) {
+         case "0":
+         case "1":    
+         case "2":
+            laNota ="Muy deficiente";
+            console.log("Muy deficiente");
+          break;
+        case "3":
+        case "4":
+            laNota ="Insuficiente";
+            console.log("Insuficiente");
+        break;
+        case "5":
+            laNota ="Suficiente";
+            console.log("Suficiente");
+        break;
+        case "6":
+            laNota ="Bien";
+            console.log("Bien");
+        break;
+        case "7":
+        case "8":
+            laNota ="Notable";
+            console.log("Notable");
+        break;
+        case "9":
+        case "10":
+            laNota ="Sobresaliente ";
+            console.log("Sobresaliente");
+        break;
+        default:
+            laNota ="No es una nota valida";
+            console.log("No es una nota valida");
+     }
+     document.getElementById('Resultado_nota').innerHTML = laNota;
+ }
 
