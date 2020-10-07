@@ -91,3 +91,23 @@ let laNota = null;
      document.getElementById('Resultado_nota').innerHTML = laNota;
  }
 
+ //Crea una función que reciba dos valores y muestre cual es el mayor.
+
+ function cualEsMayor (valor1, valor2) {
+     if (valor1 > valor2) {
+         console.log(valor1 + "es mayor.");
+     } else if (valor1 < valor2) {
+         console.log(valor2 + "es mayor.");
+     } else {
+         console.log("Son iguales");
+     }
+ }
+
+
+ //Crea una función que reciba dos cadenas de texto y retorne la concatenación de las mismas
+
+ function concatenacion (texto1, texto2) {
+     return texto1 + texto2;
+ }
+
+ /*
