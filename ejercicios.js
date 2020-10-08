@@ -105,12 +105,17 @@ let laNota = null;
 
 
  //Crea una función que reciba dos cadenas de texto y retorne la concatenación de las mismas. Preguntar si esta funcion funciona para frases o solo para palabras
-
+ //fallido. Trate de poner dos input pero no salio bien.
+let con1 = null;
+let con2 = null;
  function concatenacion (texto1, texto2) {
      return texto1 + texto2;
+     document.getElementById("texto_contatenado1").innerHTML = con1;
+     document.getElementById("texto_contatenado2").innerHTML = con2;
  }
+ //fallido. Trate de poner dos input pero no salio bien.
 
- //Crea una funcion que reciba monto de producto y medio de pago.
+ //Crea una funcion que reciba monto de producto y medio de pago. Preguntar como se ponen dos input relacionados a la misma funcion.
 
  function descuento(monto, medioDePago){
     if(monto <200){
@@ -137,4 +142,10 @@ let laNota = null;
             return monto;
         }
     }
+}
+
+//Dibuje un arbol con asteriscos.
+
+function dibujarArbol (altura) {
+
 }
