@@ -104,10 +104,37 @@ let laNota = null;
  }
 
 
- //Crea una función que reciba dos cadenas de texto y retorne la concatenación de las mismas
+ //Crea una función que reciba dos cadenas de texto y retorne la concatenación de las mismas. Preguntar si esta funcion funciona para frases o solo para palabras
 
  function concatenacion (texto1, texto2) {
      return texto1 + texto2;
  }
 
- /*
+ //Crea una funcion que reciba monto de producto y medio de pago.
+
+ function descuento(monto, medioDePago){
+    if(monto <200){
+        return monto;
+    }else{
+        if(monto>=200 && monto<=400){
+            switch(medioDePago){
+                case 'E':
+                    monto = monto * 0.7;
+                    break;
+                case 'D':
+                    monto = monto * 0.8;
+                    break;
+                case 'C':
+                    monto = monto *0.9;
+                    break;
+                default:
+                    console.log("Error");
+            }
+
+            return monto;
+        }else{
+            monto = monto * 0.6;
+            return monto;
+        }
+    }
+}
