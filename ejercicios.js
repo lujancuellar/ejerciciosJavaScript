@@ -160,3 +160,23 @@ function dibujarArbol (altura) {
 
   document.getElementById('Arbol').innerHTML = Arbol;
 }
+
+//Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma: (fallido)
+function dibujarNumero (num) {
+    console.log(num)
+    let numero = "";
+    numero += "<p>";
+    for(let i=0; i<num; i++) {
+        for(let j=0; j<=i; j++) {
+           numero += num;
+                }
+      numero += "</p>";
+    }
+  
+  
+    document.getElementById('elNum').innerHTML = numero;
+  }
+
+  //nueva funcion.
+
+  
