@@ -177,6 +177,9 @@ function dibujarNumero (num) {
     document.getElementById('elNum').innerHTML = numero;
   }
 
-  //nueva funcion.
+  //Crear una funcion que reciba dos valores y retorno el producto de los mismos.
 
-  
+  function producto (num1, num2) {
+      return num1 * num2;
+  }
+
