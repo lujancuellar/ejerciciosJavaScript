@@ -177,9 +177,18 @@ function dibujarNumero (num) {
     document.getElementById('elNum').innerHTML = numero;
   }
 
-  //Crear una funcion que reciba dos valores y retorno el producto de los mismos.
+  //Crear una función que reciba dos valores y retorne el producto de los mismos.
 
   function producto (num1, num2) {
       return num1 * num2;
   }
 
+  //Praticar el prompt.
+
+
+  function Mensaje() {
+      let aviso = prompt("¿Cual es tu nombre?");
+      if (aviso != null) {
+          document.getElementById('alerta').innerHTML = aviso + " , que tengas un buen dia";
+      }
+  }
