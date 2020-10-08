@@ -147,5 +147,16 @@ let con2 = null;
 //Dibuje un arbol con asteriscos.
 
 function dibujarArbol (altura) {
+  console.log(altura)
+  let Arbol = "";
+  Arbol += "<p>";
+  for(let i=0; i<altura; i++) {
+      for(let j=0; j<=i; j++) {
+         Arbol +="*";
+              }
+    Arbol += "</p>";
+  }
 
+
+  document.getElementById('Arbol').innerHTML = Arbol;
 }
