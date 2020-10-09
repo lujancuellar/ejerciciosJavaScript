@@ -33,17 +33,6 @@
 
     <div id="Arbol">
 
-    </div>
-
-
-
-
-  <h2>Quinto ejercicio. Concatenacion de texto</h2>
-    <input type="text" id="texto1" onchange="concatenacion(document.getElementById('texto1').value)">
-    <input type="text" id="texto2" onchange="concatenacion(document.getElementById('texto2').value)">
-    <div id="texto_contatenado">
-    
-    </div>
   <h2>Arbol pero de numeros</h2>
   <input type="number" id="num" onchange="dibujarNumero(document.getElementById('num').value)">
     <button onclick="dibujarNumero(document.getElementById('num').value)">Mostrar Arbol</button>
@@ -61,5 +50,25 @@
 
     </div>
 
+    <h2>Mostrar la hora y el dia en pagina web</h2> 
+    <button onclick="mostrarFecha()">¿Que hora y dia es?</button>
+    <p id="fecha"></p>
+<h2>Multiplicación de dos valores</h2> 
+<label for="">Valor 1</label><input type="number" name="Multiplicando1" id="Multiplicando1"></input>
+<label for="">Valor 2</label><input type="number" name="Multiplicando2" id="Multiplicando2"></input>
+<button onclick="producto()">Multiplicar</button>
+<p id="rest"></p>
+
+<h2>Concatenar dos textos</h2> 
+<label for="">Texto 1</label><input type="text" name="texto1" id="texto1"></input>
+<label for="">Texto 2</label><input type="text" name="texto2" id="texto2"></input>
+<button onclick="textoConcatenado()">Sumar texto</button>
+<p id="elTexto"></p>
+
+<h2>Cual es mayor</h2> 
+<label for="">Primer numero</label><input type="number" name="primerNumero" id="primerNumero"></input>
+<label for="">Segundo numero</label><input type="number" name="segundoNumero" id="segundoNumero"></input>
+<button onclick="compararValores(document.getElementById('primerNumero').value , document.getElementById('segundoNumero').value)">Comparar valores</button>
+<p id="elMayor"></p>
 </body>
 </html>

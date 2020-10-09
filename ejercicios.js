@@ -93,27 +93,24 @@ let laNota = null;
 
  //Crea una función que reciba dos valores y muestre cual es el mayor.
 
- function cualEsMayor (valor1, valor2) {
-     if (valor1 > valor2) {
-         console.log(valor1 + "es mayor.");
-     } else if (valor1 < valor2) {
-         console.log(valor2 + "es mayor.");
+ function compararValores (val1, val2) {
+
+     if (val1 > val2) {
+        document.getElementById("elMayor").innerHTML = "<p> El primer valor:  "+val1+" es mayor que el segundo valor: "+val2+"</p>";
+     }
+      else if (val1 < val2) {
+        document.getElementById("elMayor").innerHTML = "<p> El primer valor:"+val1+" es menor que el segundo valor: "+val2+"</p>";
      } else {
-         console.log("Son iguales");
+        document.getElementById("elMayor").innerHTML = "<p> El primer valor:"+val1+" es igual al segundo valor: "+val2+"</p>";
      }
  }
 
 
  //Crea una función que reciba dos cadenas de texto y retorne la concatenación de las mismas. Preguntar si esta funcion funciona para frases o solo para palabras
- //fallido. Trate de poner dos input pero no salio bien.
-let con1 = null;
-let con2 = null;
- function concatenacion (texto1, texto2) {
-     return texto1 + texto2;
-     document.getElementById("texto_contatenado1").innerHTML = con1;
-     document.getElementById("texto_contatenado2").innerHTML = con2;
- }
- //fallido. Trate de poner dos input pero no salio bien.
+ function textoConcatenado () {
+    let textoFinal = document.getElementById("texto1").value + document.getElementById("texto2").value;
+    document.getElementById("elTexto").innerHTML = textoFinal;
+}
 
  //Crea una funcion que reciba monto de producto y medio de pago. Preguntar como se ponen dos input relacionados a la misma funcion.
 
@@ -179,8 +176,9 @@ function dibujarNumero (num) {
 
   //Crear una función que reciba dos valores y retorne el producto de los mismos.
 
-  function producto (num1, num2) {
-      return num1 * num2;
+  function producto () {
+      let resultado = document.getElementById("Multiplicando1").value * document.getElementById("Multiplicando2").value;
+      document.getElementById("rest").innerHTML = resultado;
   }
 
   //Praticar el prompt.
@@ -191,4 +189,10 @@ function dibujarNumero (num) {
       if (aviso != null) {
           document.getElementById('alerta').innerHTML = aviso + " , que tengas un buen dia";
       }
+  }
+
+  //Mostrar la hora en pagina web.
+
+  function mostrarFecha() {
+      document.getElementById("fecha").innerHTML = Date();
   }
