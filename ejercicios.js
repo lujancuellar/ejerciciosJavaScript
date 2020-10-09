@@ -198,7 +198,7 @@ function dibujarNumero (num) {
   }
 
 
-  //promedio de numeros.Este ejercicio me dio Daniel Evangelisto y este es su codigo. No pude resolverlo sola. Trato de entender que hizo.
+  //promedio de numeros. Este ejercicio me lo dio Daniel Evangelisto y este es su codigo. No pude resolverlo sola. Trato de entender que hizo.
 
   function promedio(numero){
     let cantidad   = Number(numero);
@@ -227,3 +227,19 @@ function dibujarNumero (num) {
         document.getElementById("resultado").innerHTML = `El promedio de numeros ingresados es de: <br> ${suma/cantidad}`;
     
 }
+
+//Tema oscuro con cookies.
+
+function modoOscuro() {
+    let cuerpoweb = document.body;
+    cuerpoweb.classList.toggle("oscuro");
+    localStorage.setItem("oscuro", oscuro);
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("oscuro")) {
+      ModoOscuro();
+    }
+  });
+
+ 
