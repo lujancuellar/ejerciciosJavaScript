@@ -7,8 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="ejercicios.js"></script>
 </head>
-<body>
+<body onload="checkCookie()">
 <h1>Bienvenido/a a varios ejercicios de JavaScript. </h1>
+
  <h2>Primer ejercicio. Pide un numero y dice que dia de la semana es. </h2>
      <input type="number" id="dia" onchange="DiaDeSemana(document.getElementById('dia').value)">
   
@@ -71,7 +72,7 @@
 <label for="">Primer numero</label><input type="number" name="primerNumero" id="primerNumero"></input>
 <label for="">Segundo numero</label><input type="number" name="segundoNumero" id="segundoNumero"></input>
 <button onclick="compararValores(document.getElementById('primerNumero').value , document.getElementById('segundoNumero').value)">Comparar valores</button>
-<p id="elMayor"></p>
+<p id="elMayor"></p> 
 </body>
 <h2>Promedio de numeros</h2>
                 <ol>

@@ -51,7 +51,7 @@ let miEdad = null;
      document.getElementById('laEdad').innerHTML = miEdad;
  }
 
- //tercer ejercicio. Pide la nota y muestra la calificacion
+ //tercer ejercicio. Pide la nota y muestra la calificación
 let laNota = null;
  function miNota (nota) {
      switch (nota) {
@@ -112,7 +112,7 @@ let laNota = null;
     document.getElementById("elTexto").innerHTML = textoFinal;
 }
 
- //Crea una funcion que reciba monto de producto y medio de pago. Preguntar como se ponen dos input relacionados a la misma funcion.
+ //Crea una función que reciba monto de producto y medio de pago. Preguntar como se ponen dos input relacionados a la misma funcion.
 
  function descuento(monto, medioDePago){
     if(monto <200){
@@ -266,8 +266,48 @@ function setSwitchText() {
    setSwitchText();
 })();
 
+//cookies.
 
+//Establecer una cookie.
 
+function setCookie(cname,cvalue,exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toGMTString();
+    document.cookie = cname + "=" + cvalue + "; " + expires + ";path=/";
+}
+
+//función para obtener cookie.
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    } 
+    return "";
+}
+
+//Comprobar existencia de cookie.
+
+function checkCookie() {
+    var user=getCookie("username");
+    if (user != "") {
+        alert("Bienvenido/a de nuevo " + user);
+    } else {
+        user = prompt("Por favor escribe tu nombre:", "");
+        if (user != "" && user != null) {
+            setCookie("username", user, 30);
+        }
+    }
+}
 
 
 
