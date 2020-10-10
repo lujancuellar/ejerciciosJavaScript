@@ -1,11 +1,21 @@
-body {
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-size: 25px;
-  }
-  
-  .oscuro {
-    background-color: black;
-    color: white;
-  }
+html, body {
+  background-color: var(--color-secondary);
+  color: var(--font-color);
+}
+
+.theme-light {
+  --color-primary: #ede4da;
+  --color-secondary: #deccb1;
+  --color-accent: #d99f45;
+  --font-color: #1a1918;
+  --color-highlight: #32acb3;
+  --color-shadow: #4a4a46;
+}
+.theme-dark {
+  --color-primary: #1c1a1a;
+  --color-secondary: #423438;
+  --color-accent: #a34646;
+  --font-color: #e9f5f4;
+  --color-highlight: #b0932a;
+  --color-shadow: #68695e;
+}

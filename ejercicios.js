@@ -228,18 +228,45 @@ function dibujarNumero (num) {
     
 }
 
-//Tema oscuro con cookies.
+//Tema oscuro con localStorage.
 
-function modoOscuro() {
-    let cuerpoweb = document.body;
-    cuerpoweb.classList.toggle("oscuro");
-    localStorage.setItem("oscuro", oscuro);
-  }
+//Establece el tema elegido.
+function setTheme(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
 
-  document.addEventListener("DOMContentLoaded", function() {
-    if (localStorage.getItem("oscuro")) {
-      ModoOscuro();
-    }
-  });
+//Para cambiar el tema entre claro y oscuro.
+function toggleTheme() {
+   if (localStorage.getItem('theme') === 'theme-dark'){
+       setTheme('theme-light');
+   } else {
+       setTheme('theme-dark');
+   }
+   setSwitchText();
+}
+
+//Para elegir el texto del boton.
+function setSwitchText() {
+	if (localStorage.getItem('theme') === 'theme-light') {
+		document.getElementById("switchText").innerHTML = "Tema Oscuro";
+	} else {
+		document.getElementById("switchText").innerHTML = "Tema Claro";
+	}
+}
+
+//Para que por default sea tema que se haya elegido antes.
+
+(function () {
+   if (localStorage.getItem('theme') === 'theme-light') {
+       setTheme('theme-light');
+   } else {
+       setTheme('theme-dark');
+   }
+   setSwitchText();
+})();
+
+
+
 
  
