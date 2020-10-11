@@ -325,13 +325,15 @@ function Redirigir() {
    let email=document.myform.email.value;
 
     if (nombre==null || nombre==""){  
-      alert("Nombre no puede estar vacio");  
+      alert("Nombre no puede estar vacío");  
       return false;  
-    }else if(edad==null || edad==""){  
-      alert("Edad no puede estar vacio");  
+    }else if(edad==null || edad=="" || edad < 18){  
+      alert("Edad esta vacía o no es mayor a 18 años");  
       return false;  
       }  else if (email==null || email=="") {
-        alert("Email no puede estar vacio");  
+        alert("Email no puede estar vacío");  
          return false; 
+       } else {
+           alert("Información enviada");
        }
     } 
