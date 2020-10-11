@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,89 +8,104 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="ejercicios.js"></script>
 </head>
-<body onload="checkCookie()">
-<h1>Bienvenido/a a varios ejercicios de JavaScript. </h1>
-<a href="http://google.com" onClick="return Redirigir()">Este link te llevara a Google</a>
 
- <h2>Primer ejercicio. Pide un numero y dice que dia de la semana es. </h2>
-     <input type="number" id="dia" onchange="DiaDeSemana(document.getElementById('dia').value)">
-  
+<body onload="checkCookie()">
+    <h1>Bienvenido/a a varios ejercicios de JavaScript. </h1>
+    <a href="http://google.com" onClick="return Redirigir()">Este link te llevara a Google</a>
+
+    <h2>Primer ejercicio. Pide un numero y dice que dia de la semana es. </h2>
+    <input type="number" id="dia" onchange="DiaDeSemana(document.getElementById('dia').value)">
+
     <button onclick="DiaDeSemana(document.getElementById('dia').value)">¿Que dia es?</button>
     <div id="resultado">
 
     </div>
-   <h2>Segundo ejercicio. Pide la edad y si es mayor de 18 años indica que ya puede conducir.</h2>
-   <input type="number" id ="edad" onchange="puedoConducir(document.getElementById('edad').value)">
-  
-   <button onclick="puedoConducir(document.getElementById('edad').value)">¿Puedo conducir?</button>
-   <div id="laEdad">
+    <h2>Segundo ejercicio. Pide la edad y si es mayor de 18 años indica que ya puede conducir.</h2>
+    <input type="number" id="edad" onchange="puedoConducir(document.getElementById('edad').value)">
 
- <h2>Tercer ejercicio.Pide la nota y muestra la calificación. </h2>
- <input type="number" id ="nota" onchange="miNota(document.getElementById('nota').value)">
-  
-   <button onclick="miNota(document.getElementById('nota').value)">Mi nota es: </button>
-   <div id="Resultado_nota">
-       </div>
+    <button onclick="puedoConducir(document.getElementById('edad').value)">¿Puedo conducir?</button>
+    <div id="laEdad">
 
-<h2>Cuarto ejercicio. Crea una función que reciba un valor y muestre un arbol</h2>
-    <input type="number" id="altura" onchange="dibujarArbol(document.getElementById('altura').value)">
-    <button onclick="dibujarArbol(document.getElementById('altura').value)">Mostrar Arbol</button>
+        <h2>Tercer ejercicio.Pide la nota y muestra la calificación. </h2>
+        <input type="number" id="nota" onchange="miNota(document.getElementById('nota').value)">
 
-    <div id="Arbol">
+        <button onclick="miNota(document.getElementById('nota').value)">Mi nota es: </button>
+        <div id="Resultado_nota">
+        </div>
 
-  <h2>Arbol pero de numeros</h2>
-  <input type="number" id="num" onchange="dibujarNumero(document.getElementById('num').value)">
-    <button onclick="dibujarNumero(document.getElementById('num').value)">Mostrar Arbol</button>
+        <h2>Cuarto ejercicio. Crea una función que reciba un valor y muestre un arbol</h2>
+        <input type="number" id="altura" onchange="dibujarArbol(document.getElementById('altura').value)">
+        <button onclick="dibujarArbol(document.getElementById('altura').value)">Mostrar Arbol</button>
 
-    <div id="elNum">
+        <div id="Arbol">
 
-    </div>
+            <h2>Arbol pero de numeros</h2>
+            <input type="number" id="num" onchange="dibujarNumero(document.getElementById('num').value)">
+            <button onclick="dibujarNumero(document.getElementById('num').value)">Mostrar Arbol</button>
 
-    <h2>Prompt</h2>
-    <p>Apreta el boton y aparecera un aviso</p>
-    <button onclick="Mensaje()">Apretar boton</button>
+            <div id="elNum">
 
-    <div id="alerta">
+            </div>
+
+            <h2>Prompt</h2>
+            <p>Apreta el boton y aparecera un aviso</p>
+            <button onclick="Mensaje()">Apretar boton</button>
+
+            <div id="alerta">
 
 
-    </div>
+            </div>
 
-    <h2>Mostrar la hora y el dia en pagina web</h2> 
-    <button onclick="mostrarFecha()">¿Que hora y dia es?</button>
-    <p id="fecha"></p>
-<h2>Multiplicación de dos valores</h2> 
-<label for="">Valor 1</label><input type="number" name="Multiplicando1" id="Multiplicando1"></input>
-<label for="">Valor 2</label><input type="number" name="Multiplicando2" id="Multiplicando2"></input>
-<button onclick="producto()">Multiplicar</button>
-<p id="rest"></p>
+            <h2>Mostrar la hora y el dia en pagina web</h2>
+            <button onclick="mostrarFecha()">¿Que hora y dia es?</button>
+            <p id="fecha"></p>
+            <h2>Multiplicación de dos valores</h2>
+            <label for="">Valor 1</label><input type="number" name="Multiplicando1" id="Multiplicando1"></input>
+            <label for="">Valor 2</label><input type="number" name="Multiplicando2" id="Multiplicando2"></input>
+            <button onclick="producto()">Multiplicar</button>
+            <p id="rest"></p>
 
-<h2>Concatenar dos textos</h2> 
-<label for="">Texto 1</label><input type="text" name="texto1" id="texto1"></input>
-<label for="">Texto 2</label><input type="text" name="texto2" id="texto2"></input>
-<button onclick="textoConcatenado()">Sumar texto</button>
-<p id="elTexto"></p>
+            <h2>Concatenar dos textos</h2>
+            <label for="">Texto 1</label><input type="text" name="texto1" id="texto1"></input>
+            <label for="">Texto 2</label><input type="text" name="texto2" id="texto2"></input>
+            <button onclick="textoConcatenado()">Sumar texto</button>
+            <p id="elTexto"></p>
 
-<h2>Cual es mayor</h2> 
-<label for="">Primer numero</label><input type="number" name="primerNumero" id="primerNumero"></input>
-<label for="">Segundo numero</label><input type="number" name="segundoNumero" id="segundoNumero"></input>
-<button onclick="compararValores(document.getElementById('primerNumero').value , document.getElementById('segundoNumero').value)">Comparar valores</button>
-<p id="elMayor"></p> 
+            <h2>Cual es mayor</h2>
+            <label for="">Primer numero</label><input type="number" name="primerNumero" id="primerNumero"></input>
+            <label for="">Segundo numero</label><input type="number" name="segundoNumero" id="segundoNumero"></input>
+            <button
+                onclick="compararValores(document.getElementById('primerNumero').value , document.getElementById('segundoNumero').value)">Comparar
+                valores</button>
+            <p id="elMayor"></p>
 </body>
 <h2>Promedio de numeros</h2>
-                <ol>
-                    <li>Introduzca cantidad de numeros que ingresara al programa.</li>
-                    <li>Haga "click" en el boton inicio para continuar.</li>
-                </ol>
-                <label for="numero">Cantidad de ingresos</label>
-                <input class="form-control" type="number" name="numero" id="numero"  >
-                <button  type="button" onclick='promedio(document.getElementById("numero").value)' class=" btn btn-dark mt-3" >Inicio</button>
-                   
-            </div>
-            <div class=>
-                <p  id="resultado" style="font-size: 2rem;" ></p>
+<ol>
+    <li>Introduzca cantidad de numeros que ingresara al programa.</li>
+    <li>Haga "click" en el boton inicio para continuar.</li>
+</ol>
+<label for="numero">Cantidad de ingresos</label>
+<input class="form-control" type="number" name="numero" id="numero">
+<button type="button" onclick='promedio(document.getElementById("numero").value)'
+    class=" btn btn-dark mt-3">Inicio</button>
 
-                <h2>Apreta este boton y cambiaras de tema. Ademas se guardara el tema elegido</h2>
+</div>
+<div>
+    <p id="resultado" style="font-size: 2rem;"></p>
 
-                <button id="switch" onclick="toggleTheme()"><div id="switchText">Cambiar tema</div></button>
+    <h2>Apreta este boton y cambiaras de tema. Ademas se guardara el tema elegido</h2>
+
+    <button id="switch" onclick="toggleTheme()">
+        <div id="switchText">Cambiar tema</div>
+    </button>
+
+   <h2>Formulario</h2>
+   <form name="myform" method="post" action="" onsubmit="return validateform()" >  
+    Nombre: <input type="text" name="nombre"><br/>  
+    Edad: <input type="number" name="edad"><br/>  
+    Email: <input type="email" name="email"><br/>
+    <input type="submit" value="Enviar">  
+    </form>  
+
 
 </html>

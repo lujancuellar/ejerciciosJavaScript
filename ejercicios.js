@@ -312,10 +312,26 @@ function checkCookie() {
 //Ventana que te lleva a otra pagina si se selecciona aceptar.
 
 function Redirigir() {
-    var myConfirm = confirm("¿Seguro que querés abandonar esta pagina?");
+    let myConfirm = confirm("¿Seguro que querés abandonar esta pagina?");
     return myConfirm
 }
 
 
 
- 
+ //Formulario con validación.
+ function validateform(){  
+   let nombre=document.myform.nombre.value;  
+   let edad=document.myform.edad.value;  
+   let email=document.myform.email.value;
+
+    if (nombre==null || nombre==""){  
+      alert("Nombre no puede estar vacio");  
+      return false;  
+    }else if(edad==null || edad==""){  
+      alert("Edad no puede estar vacio");  
+      return false;  
+      }  else if (email==null || email=="") {
+        alert("Email no puede estar vacio");  
+         return false; 
+       }
+    } 
