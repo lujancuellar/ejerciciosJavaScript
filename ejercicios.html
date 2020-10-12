@@ -100,18 +100,16 @@
     </button>
 
    <h2>Formulario</h2>
-   <form name="myform" method="post" action="" onsubmit="return validateform()" >  
+   <form name="myform" method="post" action="" onsubmit="return validarFormulario()" >  
     Nombre: <input type="text" name="nombre"><br/>  
     Edad: <input type="number" name="edad"><br/>  
     Email: <input type="email" name="email"><br/>
     Trabajador o estudiante: 
-    <select id="mySelect" onclick="myFunction()">
+    <select id="mySelect" onchange="miLista()">
         <option value="Estudiante">Estudiante</option>
         <option value="Trabajador">Trabajador</option>
     </select>
-      <p id="demo"></p>
+      <p id="segundoSelect"></p>
     <input type="submit" value="Enviar">  
     </form>  
-
-
 </html>

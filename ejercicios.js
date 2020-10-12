@@ -317,7 +317,7 @@ function Redirigir() {
 }
 
  //Formulario con validación.
- function validateform(){  
+ function validarFormulario(){  
    let nombre=document.myform.nombre.value;  
    let edad=document.myform.edad.value;  
    let email=document.myform.email.value;
@@ -336,9 +336,11 @@ function Redirigir() {
        }
     } 
 
-function myFunction() {
-        let x = document.getElementById("mySelect").value;
-        document.getElementById("demo").innerHTML = "<select><option>Relación de dependencia</option><option>Monotributista</option><option>Informal<option></select> ";
+function miLista() {
+    let seleccionado = document.getElementById("mySelect").value;
+    if (seleccionado == "Trabajador") {
+    document.getElementById("segundoSelect").innerHTML = "<select><option>Relación de dependencia</option><option>Monotributista</option><option>Informal<option></select> ";
+} else {
+    document.getElementById("segundoSelect").innerHTML = "<select><option>Secundario</option><option>Terciario</option><option>Universitario<option></select>";
 }
-
-    
+}
