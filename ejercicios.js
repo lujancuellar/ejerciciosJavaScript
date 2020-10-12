@@ -316,8 +316,6 @@ function Redirigir() {
     return myConfirm
 }
 
-
-
  //Formulario con validación.
  function validateform(){  
    let nombre=document.myform.nombre.value;  
@@ -337,3 +335,10 @@ function Redirigir() {
            alert("Información enviada");
        }
     } 
+
+function myFunction() {
+        let x = document.getElementById("mySelect").value;
+        document.getElementById("demo").innerHTML = "<select><option>Relación de dependencia</option><option>Monotributista</option><option>Informal<option></select> ";
+}
+
+    
