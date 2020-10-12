@@ -337,10 +337,10 @@ function Redirigir() {
     } 
 
 function miLista() {
-    let seleccionado = document.getElementById("mySelect").value;
+    let seleccionado = document.getElementById("miSelect").value;
     if (seleccionado == "Trabajador") {
     document.getElementById("segundoSelect").innerHTML = "<select><option>Relación de dependencia</option><option>Monotributista</option><option>Informal<option></select> ";
-} else {
+} if (seleccionado == "Estudiante") {
     document.getElementById("segundoSelect").innerHTML = "<select><option>Secundario</option><option>Terciario</option><option>Universitario<option></select>";
-}
+} 
 }
